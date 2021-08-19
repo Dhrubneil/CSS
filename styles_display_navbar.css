@@ -31,10 +31,11 @@ body{
 ul{
     list-style-type: none;
     /* background:#222; */
+    background:gray;
     margin:0;
     padding:0;
     overflow:hidden;
-    /* min-height: 60px; */
+    min-height: 60px;
     /* overflow: hidden; or overflow: inline-block can be used to prevent collapsing parent*/
 }
 
