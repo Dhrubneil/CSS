@@ -1,0 +1,159 @@
+/* 
+Block : Top Bottom Margin Respected
+Inline : Top Bottom Margin Not Respected
+
+Mobile Navbar
+list-style-type property
+descendant selectors
+*/
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* img{
+    min-width:100%;
+    min-height: 100%;
+} */
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:aliceblue;   
+    background-image: url("F://HTML/Coffee/images/coffee_note.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position-y: 25%;
+    background-size: 100%;
+}
+
+ul{
+    list-style-type: none;
+    /* background:#222; */
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    /* min-height: 60px; */
+    /* overflow: hidden; or overflow: inline-block can be used to prevent collapsing parent*/
+}
+
+ul li{
+    float:left;
+}
+
+li.logo{
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 35px;
+    font-weight:bolder;
+    color: #3f1e02;
+    padding: 10px ;
+    margin: 10px 25px 10px 10px;
+    float: right;
+}
+
+ul li a{
+    display:block;
+    text-decoration: none;
+    color: orangered;
+    letter-spacing: 1px;
+    text-align:center;
+    
+    /* margin:10px 10px;
+    padding:5px; 
+    elements are overlying on each of them*/
+
+    /* anchor tag elements are inline elements; browser's not gonna respect top bottom margins and paddings for then even if they are explicitly set by CSS Rules. In order to make this happen inline elements should be displayed as block elements as the first rule is set to do so*/
+    
+    padding:10px;
+    margin: 10px;
+    /* now the browser is respecting the padding between top bottom elements */
+    
+}
+
+a:hover{
+    transition:0.5s ease-in-out;
+    background:darkslategray;
+    border-radius:10px;
+}
+
+h3{
+    margin:10px auto;
+    
+    width:100px;
+    text-align:center;
+    color: darkslategray;
+    font-weight:500;
+    letter-spacing: 1px;
+    border-bottom: 2px solid gray;
+}
+.account{
+    text-align:center;
+    margin:50px auto;
+    
+}
+
+.account a{
+    text-decoration: none;
+    color:lightseagreen;
+    padding:8px 15px;
+    border-bottom: 1px solid grey;
+}
+
+.form{
+    padding:10px;
+    border-top:5px solid saddlebrown;
+    border-bottom:5px solid saddlebrown;
+    border-radius: 5px;
+    margin:20px auto;
+    min-height: 200px;
+    width:300px;
+    align-items: center;
+    background:gray;
+    opacity:30%;
+    /* lightblue; */
+}
+
+.form p{
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    font-weight:bolder;
+    color: #3f1e02;
+    padding: 5px ;
+}
+.form:hover{
+    opacity:80%;
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 2px solid saddlebrown;
+
+}
+
+input[type=text]:focus{
+    outline: none;
+    /* outline-color:slategray; */
+    border: 3px solid #3f1e02;
+
+    transition: 0.5s;
+    /* border-bottom:none; */
+    
+    width:calc(110%);
+    margin-left: -15px;
+    opacity:100%;
+
+    /* border-bottom: 2px solid teal; */
+}
+
+input[type=text]:hover{
+    /* border-bottom:none; */
+    background-color:saddlebrown;
+    opacity:100%;
+}
