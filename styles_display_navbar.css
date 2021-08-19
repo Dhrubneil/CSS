@@ -99,6 +99,7 @@ h3{
 .account a{
     text-decoration: none;
     color:saddlebrown;
+    font-weight:550;
     padding:8px 15px;
     border-bottom: 1px solid grey;
 }
