@@ -24,19 +24,19 @@ body{
     background-image: url("https://images.pexels.com/photos/414551/pexels-photo-414551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-repeat: no-repeat;
     background-position:center;
-/*     background-position-y: 25%; */
+    background-position-y: 25%;
     background-size: 100%;
 }
 
 ul{
     list-style-type: none;
     /* background:#222; */
-    background:gray;
+/*     background:gray; */
     margin:0;
     padding:0;
-    overflow:hidden;
+/*     overflow:hidden; */
     min-height: 60px;
-    opacity:80%;
+/*     opacity:80%; */
     /* overflow: hidden; or overflow: inline-block can be used to prevent collapsing parent*/
 }
 
