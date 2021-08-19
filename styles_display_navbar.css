@@ -127,6 +127,7 @@ h3{
     padding: 5px ;
 }
 .form:hover{
+    transition:0.5s;
     opacity:80%;
 }
 input{
